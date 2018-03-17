@@ -73,4 +73,10 @@ $('#submit').click(function() {
         		$('#err').html('User Not Found');
 
     			});
-	})
+	});
+
+$('#submit2').click(function() {
+		$('#usid').val('');
+		$("#data").hide("slow");
+		$("#info").show("slow");
+})
