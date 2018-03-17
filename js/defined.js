@@ -1,4 +1,4 @@
-$('#submit').click(function() {
+$('#submit').click(function(event) {
 		event.preventDefault();
 		var user=$('#usid').val()
 		var url='https://api.github.com/users/'+user;
