@@ -1,7 +1,5 @@
 $('#submit').click(function() {
-
-	
-
+		event.preventDefault();
 		var user=$('#usid').val()
 		var url='https://api.github.com/users/'+user;
 		var followers='https://api.github.com/users/'+user+'/followers';
@@ -68,15 +66,25 @@ $('#submit').click(function() {
 							})
 						})
 				})
-			}).catch(function(err){       
-        		$('#prog').html('');
-        		$('#err').html('User Not Found');
+			}).catch(function(err){  
+				console.log("err")     
+        		$("#prog").hide("slow");
+        		$('#err').show('slow');
 
     			});
 	});
 
 $('#submit2').click(function() {
 		$('#usid').val('');
+		$('#err').hide('slow');
+		$("#prog").hide("slow");
+		$("#info").show("slow");
+		console.log("submit2");
+})
+
+$('#submit3').click(function() {
+		$('#usid').val('');
 		$("#data").hide("slow");
 		$("#info").show("slow");
+		console.log("submit3");
 })

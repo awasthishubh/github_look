@@ -37,20 +37,34 @@
               <div id="info">
                   <span class="card-title "><center>Enter Github username</center></span><br><br><br>
                   <div class=" col s1"></div>
-                  <div class="input-field col s10"><i class="material-icons prefix">account_circle</i>
+
+                  <div class="input-field col s10">
+                   <form>
+                    <i class="material-icons prefix">account_circle</i>
                     <input id="usid" type="text" class="validate">
                     <label for="usid">Usename</label>
                     <br><br><center>
                     <button class="btn waves-effect waves-light deep-purple darken-4" type="submit" id="submit">Submit
                         <i class="material-icons right">send</i>
                     </button></center>
+                   </form>
                   </div>
               </div>
 
+              <center>
               <div class="progress" id="prog" style="margin-top: 100px; display: none"><br><br><br>
-                  <div class="indeterminate deep-purple darken-4"></div>
-              </div><br><br>
-              <center><span class="card-title" id="err"> </span><center>
+                  <div class="indeterminate deep-purple darken-4"></div><br><br>
+                  
+              </div>
+
+              <span class="card-title" id="err" style="display: none;">
+                  <br>Uer Not Found<br><br>
+                  <button class="btn waves-effect waves-light deep-purple darken-4" type="submit" id="submit2">Back
+                      <i class="material-icons left">arrow_back</i>
+                  </button>
+              </span>   
+                  </center>
+              
 
                 <div id="data" style="padding: 0px 50px 50px; display: none;">
                   <center><div id="img" style="align-content: center;">
@@ -86,8 +100,8 @@
                     </tr>
                   </table>
                   <center>
-                  <button class="btn waves-effect waves-light deep-purple darken-4" type="submit" id="submit2">Submit
-                      <i class="material-icons right">send</i>
+                  <button class="btn waves-effect waves-light deep-purple darken-4" type="submit" id="submit3">Back
+                      <i class="material-icons left">arrow_back</i>
                   </button></center>
                 </div>
               
